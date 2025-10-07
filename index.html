@@ -4,115 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Alves - Meu Site Pessoal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #444;
-            overflow: hidden;
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .bio {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .bio img {
-            max-width: 150px;
-            border-radius: 50%;
-        }
-
-        section {
-            margin: 30px 0;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>João Alves - Início</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Cabeçalho -->
     <header>
         <h1>João Alves - Meu Site Pessoal</h1>
     </header>
-
-    <!-- Menu de navegação -->
     <nav>
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
     </nav>
-
-    <!-- Conteúdo principal -->
     <div class="container">
-
-        <!-- Seção Início -->
-        <section id="inicio">
-            <h2>Bem-vindo ao Meu Site!</h2>
-            <p>Olá, sou João Alves. Este é o meu site onde você pode saber um pouco mais sobre mim e meus projetos.</p>
-        </section>
-
-        <!-- Seção Sobre -->
-        <section id="sobre">
-            <div class="bio">
-                <img src="sla.jpg" alt="Imagem de João Alves">
-                <h3>Sobre Mim</h3>
-                <p>Sou João Alves, um desenvolvedor web apaixonado por tecnologia e design. Trabalho criando sites e soluções digitais para melhorar a experiência dos usuários.</p>
-            </div>
-        </section>
-
-        <!-- Seção Contato -->
-        <section id="contato">
-            <h3>Contato</h3>
-            <p>Você pode me encontrar através do meu e-mail: <a href="mailto:joaoalves@dominio.com">joaoalves@dominio.com</a></p>
-        </section>
-
+        <div class="bio">
+            <img src="bruninho - Copia (2).jpg" alt="Imagem de João Alves" class="img-estendida">
+            <h2>Bem-vindo!</h2>
+            <p>
+                Este é o site pessoal de João Alves. Aqui você encontra informações sobre mim, meus interesses, esportes favoritos e como entrar em contato.
+            </p>
+            <button id="btn-boasvindas">Clique para uma mensagem!</button>
+        </div>
     </div>
-
-    <!-- Rodapé -->
     <footer>
         <p>&copy; 2025 João Alves. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        document.getElementById('btn-boasvindas').addEventListener('click', function() {
+            alert('Bem-vindo ao meu site! Fique à vontade para explorar e entrar em contato.');
+        });
+    </script>
 </body>
 
 </html>
