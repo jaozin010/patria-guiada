@@ -23,7 +23,7 @@
             <div class="info">
                 <p><strong>E-mail:</strong> <a href="mailto:joaoalves@dominio.com">joaoalves@dominio.com</a></p>
                 <p><strong>Telefone:</strong> (43) 0002-8922</p>
-                <p><strong>Endereço:</strong> Rua ticu-mia, 069 - bahia, bahia</p>
+                <p><strong>Endereço:</strong> Rua ticu-mia, 069 - chique-chique, bahia</p>
             </div>
             <form>
                 <label for="nome">Nome:</label>
@@ -47,6 +47,22 @@
     <footer>
         <p>&copy; 2025 João Alves. Todos os direitos reservados.</p>
     </footer>
+
+        <button id="btn-topo" title="Voltar ao topo">↑ Topo</button>
+
+<script>
+    // Mostrar/esconder botão conforme rolagem
+    const btnTopo = document.getElementById('btn-topo');
+    window.addEventListener('scroll', function() {
+        btnTopo.style.display = window.scrollY > 200 ? 'block' : 'none';
+    });
+
+    // Voltar ao topo suavemente
+    btnTopo.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
 </body>
 
 </html>

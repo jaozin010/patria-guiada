@@ -20,38 +20,61 @@
     <div class="container">
         <section>
             <div class="bio">
+                 <h3>Sobre Mim</h3>
                 <img src="bruninho - Copia (2).jpg" alt="Imagem de João Alves">
-                <h3>Sobre Mim</h3>
-                <p>
-                    Sou João Alves, Gosto muito de esportes como futebol, ping pong, basquete, handebol e vôlei.<br><br>
-                   
-                    Também curto exercícios físicos como calistenia, corrida e musculação.<br><br>
+            <p></p>
+
+                 Sou João Alves, tenho 15 anos e atualmente estou no 1º ano do ensino médio. Moro em Arapongas, estado do parana, e estudo no Colégio sesc,
+                sou apaixonado por tecnologia,esportes e exercicios .<br><br>
+Gosto muito de esportes como:.<br><br>
                     
-                    Sou muito social, adoro conversar e fazer novas amizades, mas também sou bastante vergonhoso em algumas situações.
-                </p>
              <div class="galeria">
-            <div class="linha-imagens">
-                <img src="img1.jpg" alt="Imagem 1">
+                  <div class="linha-imagens">
+                <img src="fut.jpg" alt="Imagem 1">
             </div>
+            Futebol
             <div class="linha-imagens">
-                <img src="img4.jpg" alt="Imagem 4">
+                <img src="bas.jpg" alt="Imagem 1">
             </div>
+            Basquete
             <div class="linha-imagens">
-                <img src="img7.jpg" alt="Imagem 7">
+                <img src="ping.jpg" alt="Imagem 2">
             </div>
+            Tênis de mesa
             <div class="linha-imagens">
-                <img src="img10.jpg" alt="Imagem 10">
+                <img src="hand.webp" alt="Imagem 3">
             </div>
-            <div class="linha-imagens">
-                <img src="img13.jpg" alt="Imagem 13">
+            Handebol
+            <div class="linha-imagens">           
+                <img src="vol.webp" alt="Imagem 4"> 
             </div>
-        </div>
+               Vôlei<br><br>
+            </div><br><br>
+            
+                     </div>
+ 
+
             </div>
         </section>
     </div>
     <footer>
         <p>&copy; 2025 João Alves. Todos os direitos reservados.</p>
     </footer>
+    <button id="btn-topo" title="Voltar ao topo">↑ Topo</button>
+
+<script>
+    // Mostrar/esconder botão conforme rolagem
+    const btnTopo = document.getElementById('btn-topo');
+    window.addEventListener('scroll', function() {
+        btnTopo.style.display = window.scrollY > 200 ? 'block' : 'none';
+    });
+
+    // Voltar ao topo suavemente
+    btnTopo.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
 </body>
 
 </html>

@@ -150,3 +150,24 @@ footer {
         max-width: 100px;
     }
 }
+/* Adicione ao final do style.css */
+#btn-topo {
+    position: fixed;
+    right: 24px;
+    bottom: 60px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 22px;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    display: none;
+    z-index: 1000;
+    transition: background 0.2s, transform 0.2s;
+}
+#btn-topo:hover {
+    background: #444;
+    transform: scale(1.08);
+}
